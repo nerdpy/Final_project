@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.2">
+  <object class="ttk.Frame" id="frame2">
+    <property name="height">500</property>
+    <property name="width">700</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Label" id="labelNovyPojistenec">
+        <property name="background">#5175f0</property>
+        <property name="text" translatable="yes">NOVÝ POJIŠTĚNEC</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">20</property>
+          <property name="y">50</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="labelJmeno">
+        <property name="text" translatable="yes">Jméno a Příjmení</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">20</property>
+          <property name="y">100</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry1">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.35</property>
+          <property name="x">20</property>
+          <property name="y">120</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label4">
+        <property name="text" translatable="yes">Email</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">20</property>
+          <property name="y">150</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry2">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.35</property>
+          <property name="x">20</property>
+          <property name="y">170</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label5">
+        <property name="text" translatable="yes">Telefon</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">20</property>
+          <property name="y">200</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry3">
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.35</property>
+          <property name="x">20</property>
+          <property name="y">220</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="button1">
+        <property name="command" type="command" cbtype="simple">tlacitkoNovyPojistenecUlozClicked</property>
+        <property name="text" translatable="yes">ULOŽIT</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">350</property>
+          <property name="y">300</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

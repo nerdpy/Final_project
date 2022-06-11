@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.2">
+  <object class="ttk.Frame" id="frame1">
+    <property name="height">500</property>
+    <property name="width">500</property>
+    <layout manager="pack">
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="ttk.Button" id="button1">
+        <property name="command" type="command" cbtype="simple">tlacitkoNovyPojistenecClicked</property>
+        <property name="text" translatable="yes">Nový pojištěnec</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">300</property>
+          <property name="y">300</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="button3">
+        <property name="command" type="command" cbtype="simple">tlacitkoNactiPojistenceClicked</property>
+        <property name="text" translatable="yes">Načti pojištěnce</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">30</property>
+          <property name="y">300</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Listbox" id="databazePojistenych">
+        <bind sequence="&lt;1&gt;" handler="callback" add="" />
+        <bind sequence="&lt;1&gt;" handler="vypisDetailuPojistence" add="" />
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relheight">0.45</property>
+          <property name="relwidth">0.51</property>
+          <property name="x">10</property>
+          <property name="y">20</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="labelJmeno">
+        <property name="background">#ffffff</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.3</property>
+          <property name="x">300</property>
+          <property name="y">50</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="labelEmail">
+        <property name="background">#ffffff</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.38</property>
+          <property name="x">300</property>
+          <property name="y">100</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="labelTelefon">
+        <property name="background">#ffffff</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="relwidth">0.3</property>
+          <property name="x">300</property>
+          <property name="y">150</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
